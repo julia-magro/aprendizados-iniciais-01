@@ -1,0 +1,14 @@
+#Importar função
+import time
+
+print("=============Escola de Dados da Alura!=============\nSeu nome: Júlia\nSeu sobrenome: Magro")
+
+#Aguardar 3s
+time.sleep(3)
+
+print('\nJ\nU\nL\nI\nA')
+
+#Aguardar 3s
+time.sleep(3)
+
+print('\n',24,"de maio de",2026)
