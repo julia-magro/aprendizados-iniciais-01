@@ -40,4 +40,5 @@ pesoDiretoria = ((100*qtdDiretoria)/totalEmpregados)
 
 mediaPonderada = ((salarioSeguranca*pesoSeguranca)+(salarioDocente*pesoDocente)+(salarioDiretoria*pesoDiretoria))/(pesoDiretoria+pesoDocente+pesoSeguranca)
 
+#Exibir
 print ('A quantidade total de empregados é: ', totalEmpregados,'\nA diferença entre o salário mais alto e mais baixo é: ', diferencaSalario,'\nA média ponderada salarial é de R$',mediaPonderada)
