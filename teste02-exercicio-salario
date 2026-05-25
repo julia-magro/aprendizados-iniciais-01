@@ -1,0 +1,43 @@
+'''
+Temos uma tabela de informação de empregos quanto ao cargo, quantidade de pessoas empregadas e o salário correspondente:
+
+|Cargo | Quantidade | Salário|
+|Segurança | 5 | 3000 |
+|Docente | 16| 6000|
+|Diretoria| 1 |12500|
+
+Precisamos trabalhar com esses dados fornecendo:
+
+- A quantidade total de empregados;
+- A diferença entre o salário mais baixo e mais alto; e
+- A média ponderada da faixa salarial da escola.
+'''
+
+#Declaração de Variáveis
+qtdSeguranca : int = 5
+qtdDocente : int = 16
+qtdDiretoria : int = 1
+salarioSeguranca : float = 3000.0
+salarioDocente : float = 6000.0
+salarioDiretoria : float = 12500.0
+totalEmpregados : int
+diferencaSalario : float
+pesoSeguranca : float
+pesoDocente : float
+pesoDiretoria : float
+mediaPonderada : float
+
+#Total de empregados
+totalEmpregados = qtdSeguranca + qtdDocente + qtdDiretoria
+
+#Diferença do salário mais alto para o mais baixo
+diferencaSalario = salarioDiretoria - salarioSeguranca
+
+#media ponderada de salario
+pesoSeguranca = ((100*qtdSeguranca)/totalEmpregados)
+pesoDocente = ((100*qtdDocente)/totalEmpregados)
+pesoDiretoria = ((100*qtdDiretoria)/totalEmpregados)
+
+mediaPonderada = ((salarioSeguranca*pesoSeguranca)+(salarioDocente*pesoDocente)+(salarioDiretoria*pesoDiretoria))/(pesoDiretoria+pesoDocente+pesoSeguranca)
+
+print ('A quantidade total de empregados é: ', totalEmpregados,'\nA diferença entre o salário mais alto e mais baixo é: ', diferencaSalario,'\nA média ponderada salarial é de R$',mediaPonderada)
