@@ -1,0 +1,13 @@
+Temos uma tabela de informação de empregos quanto ao cargo, quantidade de pessoas empregadas e o salário correspondente:
+
+|Cargo | Quantidade | Salário|
+|---|---|---|
+|Segurança | 5 | 3000 |
+|Docente | 16| 6000|
+|Diretoria| 1 |12500|
+
+Precisamos trabalhar com esses dados fornecendo:
+
+- A quantidade total de empregados;
+- A diferença entre o salário mais baixo e mais alto; e
+- A média ponderada da faixa salarial da escola.
