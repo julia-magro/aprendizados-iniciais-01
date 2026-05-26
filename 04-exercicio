@@ -1,0 +1,24 @@
+'''
+Calculadora com operadores
+    Crie um programa que solicite dois valores numéricos à pessoa usuária e: 
+        imprima a soma dos dois valores. - ok
+        imprima a subtração do primeiro pelo o segundo valor. - ok
+        imprima a multiplicação dos dois valores. - ok
+        um numerador e um denominador, e realize a divisão entre os dois valores. Deixe claro que o valor do denominador não pode ser 0. - ok
+        um numerador e um denominador e realize a divisão inteira entre os dois valores. Deixe claro que o valor do denominador não pode ser 0. - ok
+        um operador e uma potência, e realize a exponenciação entre esses dois valores. - ok
+        um numerador e um denominador, e retorne o resto da divisão entre os dois valores. Deixe claro que o valor do denominador não pode ser 0. - ok
+'''
+
+v1 = float(input('Insira um primeiro valor: '))
+v2 = float(input('Insira um segundo valor, diferente de zero: '))
+
+soma = v1+v2
+subtracao = v1-v2
+multiplicacao = v1*v2
+divisao = v1/v2
+divisaoint = int(divisao)
+exponenciacao = v1**v2
+resto = v1%v2
+
+print(f'Operação\tResultado\nSoma\t{soma}\nSubtração\t{subtracao}\nMultiplicação\t{multiplicacao}\nDivisão\t{divisao}\nDivisão(int)\t{divisaoint}\nExponenciação\t{exponenciacao}\nResto da divisão\t{resto}')
