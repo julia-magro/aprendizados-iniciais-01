@@ -1,0 +1,50 @@
+#10) Um programa deve ser escrito para ler dois números e, em seguida, perguntar à pessoa usuária qual operação ele deseja realizar. O resultado da operação deve incluir informações sobre o número - se é par ou ímpar, positivo ou negativo e inteiro ou decimal.
+
+n1 = float(input('Insira o primeiro número: '))
+n2 = float(input('Insira o segundo número: '))
+
+operacao = int(input('1 - Adição\n2 - subtração\n3 - multiplicação\n4 - divisão\n5 - exponenciação\nInsira o número referente à operação: '))
+
+total = 0
+
+# realizar operação
+if operacao == 1 :
+  total = n1 + n2
+
+elif operacao == 2 :
+  total = n1 - n2
+
+elif operacao == 3 :
+  total = n1*n2
+
+elif operacao == 4 :
+  total = n1/n2
+
+elif operacao == 5 :
+  total = n1**n2
+
+#Par ou impar
+if total%2 == 0 :
+  print('O número é par.')
+
+elif total%2 != 0 :
+  print('O número é impar.')
+
+#Positivo ou negativo
+if total>0 :
+  print('O número é positivo.')
+
+elif total<0 :
+  print('O número é negativo.')
+
+elif total == 0 :
+  print('O número é neutro')
+
+#Inteiro ou decimal
+if total%1 == 0 :
+  print('O número é inteiro.')
+
+elif total%1 != 0 :
+  print('O número é decimal')
+
+print(f'O resultado final é {total}')
