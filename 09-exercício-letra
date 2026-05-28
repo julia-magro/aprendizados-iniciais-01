@@ -1,0 +1,10 @@
+#Escreva um programa que determine se uma letra fornecida pela pessoa usuária é uma vogal ou consoante.
+
+letra = input('Insira uma letra: ').lower()
+v = 'a, e, i, o, u'
+
+if letra in v :
+    print(f'A letra {letra} é uma vogal.')
+
+else :
+    print(f'A letra {letra} é uma consoante.')

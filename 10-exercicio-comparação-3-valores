@@ -1,0 +1,29 @@
+#Escreva um programa que leia valores médios de preços de um modelo de carro por 3 anos consecutivos e exiba o valor mais alto e mais baixo entre esses três anos.
+
+modelo = input('Insira o modelo do carro: ')
+
+v1 = float(input('Insira o valor médio deste carro no ano de 2023: R$'))
+v2 = float(input('Insira o valor médio deste carro no ano de 2024: R$'))
+v3 = float(input('Insira o valor médio deste carro no ano de 2025: R$'))
+
+if v1>v2 and v1>v3 :
+    print(f'O valor médio mais alto foi de R${v1}, em 2023.')
+    if v2>v3 :
+        print(f'O valor médio mais baixo foi de R${v3}, em 2025.')
+
+    elif v3>v2 :
+        print(f'O valor médio mais baixo foi de R${v2}, em 2024.')
+
+if v2>v1 and v2>v3 :
+    print(f'O valor médio mais alto foi de R${v2}, em 2024.')
+    if v1>v3 :
+        print(f'O valor médio mais baixo foi de R${v3}, em 2025.')
+    elif v3>v1 :
+        print(f'O valor médio mais baixo foi de R${v1}, em 2023.')
+
+if v3>v2 and v3>v1 :
+    print(f'O valor médio mais alto foi de R${v3}, em 2025.')
+    if v2>v1 :
+        print(f'O valor médio mais baixo foi de R${v1}, em 2023.')
+    elif v1>v2 :
+        print(f'O valor médio mais baixo foi de R${v2}, em 2024.')

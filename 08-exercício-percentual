@@ -1,0 +1,15 @@
+# Escreva um programa que solicite o percentual de crescimento de produção de uma empresa e informe se houve um crescimento (porcentagem positiva) ou decrescimento (porcentagem negativa).
+
+percentual = float(input('Insira o percentual de crescimento de produção de uma empresa: '))
+
+
+if percentual>0 :
+    #percentual positivo
+    print('Conforme o percentual, houve um crescimento de produção.')
+    
+elif percentual<0 :
+    #percentual negativo
+    print('Conforme o percentual, houve um decrescimento de produção.')
+
+elif percentual==0 :
+    print('Conforme o percentual, a produção se manteve constante')

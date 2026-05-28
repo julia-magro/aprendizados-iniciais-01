@@ -1,0 +1,23 @@
+#Escreva um programa que leia três números e os exiba em ordem decrescente.
+
+n1 = float(input('Insira um primeiro número: '))
+n2 = float(input('Insira um segundo número: '))
+n3 = float(input('Insira um terceiro número: '))
+
+if n1>n2 and n1>n3 :
+    if n2>n3 :
+        print(f'Os números em ordem decrescente ficam: {n1 , n2 , n3}')
+    elif n3>n2 :
+        print(f'Os números em ordem decrescente ficam: {n1 , n3 , n2}')
+
+elif n2>n1 and n2>n3 :
+    if n1>n3 :
+        print(f'Os números em ordem decrescente ficam: {n2 , n1 , n3}')
+    if n3>n1 :
+        print(f'Os números em ordem decrescente ficam: {n2 , n3 , n1}')
+
+elif n3>n1 and n3>n2 :
+    if n1>n2 :
+        print(f'Os números em ordem decrescente ficam: {n3 , n1 , n2}')
+    if n2>n1 :
+        print(f'Os números em ordem decrescente ficam: {n3 , n2 , n1}')

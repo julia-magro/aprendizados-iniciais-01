@@ -1,0 +1,27 @@
+#Escreva um programa que pergunte sobre o preço de três produtos e indique qual é o produto mais barato para comprar.
+
+p1 = float(input('Insira o valor do primeiro produto: '))
+p2 = float(input('Insira o valor do segundo produto: '))
+p3 = float(input('Insira o valor do terceiro produto: '))
+
+if p1<p2 and p1<p3 :
+    print(f'O primeiro produto é mais barato')
+
+elif p2<p1 and p2<p3 :
+    print(f'O segundo produto é mais barato')
+    
+elif p3<p1 and p3<p2 :
+    print(f'O terceiro produto é mais barato')
+
+elif p1 == p2 == p3:
+    print('Os produtos possuem o mesmo preço.')
+
+#conforme ALURA:
+else:
+    # Identificamos quais produtos possuem o mesmo preço, se for o caso
+    if p1 == p2:
+        print('O primeiro e o segundo produtos são os mais baratos.')
+    elif p2 == p3:
+        print('O segundo e terceiro produtos são os mais baratos.')
+    elif p1 == p3:
+        print('O primeiro e o terceiro produtos são os mais baratos.')
