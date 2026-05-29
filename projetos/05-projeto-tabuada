@@ -1,0 +1,17 @@
+'''
+ Escreva um programa que gere a tabuada de um número inteiro de 1 a 10, de acordo com a escolha da pessoa usuária. 
+'''
+
+n = int(input('Insira um número de 1 a 10: '))
+n2 = 1
+
+if n>10 or n<1 :
+    print('Erro: Insira um número válido.')
+
+else :
+    print(f'=====TABUADA DO {n}=====\nCálculo\tResultado')
+    while n2<11 :
+        resultado = n*n2
+        print(f'{n} x {n2}\t{resultado}')
+        n2 += 1
+    print('================================')
