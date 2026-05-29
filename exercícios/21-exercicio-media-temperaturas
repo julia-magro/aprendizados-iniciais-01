@@ -1,0 +1,16 @@
+'''
+Desenvolva um programa que leia um conjunto indeterminado de temperaturas em Celsius e informe a média delas. 
+A leitura deve ser encerrada ao ser enviado o valor -273°C.
+'''
+t = 0
+qtd = 0
+soma = 0
+
+while t != -273 :
+    t = float(input('Insira uma temperatura em Celsius: '))
+    qtd += 1
+
+    soma = soma + t
+    media = soma/qtd
+
+    print('Média: ', media)
