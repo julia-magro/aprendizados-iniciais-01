@@ -1,0 +1,40 @@
+'''
+Um estabelecimento está vendendo combustíveis com descontos variados. 
+Para o etanol, se a quantidade comprada for até 15 litros, o desconto será de 2% por litro. Caso contrário, será de 4% por litro. 
+Para o diesel, se a quantidade comprada for até 15 litros, o desconto será de 3% por litro. Caso contrário, será de 5% por litro. 
+O preço do litro de diesel é R$ 2,00 e o preço do litro de etanol é R$ 1,70. 
+
+Escreva um programa que leia a quantidade de litros vendidos e o tipo de combustível (E para etanol e D para diesel) e calcule o valor a ser pago pelo cliente. 
+
+Tenha em mente algumas dicas:
+O do valor do desconto será a multiplicação entre preço do litro, quantidade de litros e o valor do desconto.
+O valor a ser pago por um cliente será o resultado da multiplicação do preço do litro pela quantidade de litros menos o valor de desconto resultante do cálculo.
+'''
+
+combustivel = input('Insira o combustível desejado (E - etanol ou D - diesel): ').lower().strip()
+l = float(input('Insira a quantidade de litros: '))
+
+desconto = 0
+
+if combustivel == 'd' :
+    valor_l = 2
+    if l<=15 :
+        desconto = valor_l*l*0.03
+    
+    elif l>15 :
+        desconto = valor_l*l*0.05
+
+elif combustivel == 'e' :
+    valor_l = 1.7
+    if l<=15 :
+        desconto = valor_l*l*0.02
+    elif l>15 :
+        desconto = valor_l*l*0.04
+
+else :
+    valor_l = 0
+    print('Insira um combustível válido')
+
+total = (valor_l*l)-desconto
+
+print (f'O valor final, com desconto aplicado é de R${total}')
