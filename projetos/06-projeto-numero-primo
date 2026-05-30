@@ -1,0 +1,23 @@
+'''
+Os números primos possuem várias aplicações dentro da Ciência de Dados em criptografia e segurança, por exemplo. 
+Um número primo é aquele que é divisível apenas por um e por ele mesmo. 
+Assim, faça um programa que peça um número inteiro e determine se ele é ou não um número primo.
+'''
+n = int(input('Insira um número: '))
+
+primo = True
+
+if n <= 1:
+    primo = False
+
+else :
+    for n2 in range(2,(n)):
+        if n % n2 == 0 :
+            primo = False
+            break
+
+if primo == True:
+    print(f'{n} é um número primo.')
+
+else :
+    print(f'{n} não é um número primo.')
