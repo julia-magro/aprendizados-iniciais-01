@@ -1,0 +1,33 @@
+'''
+Vamos entender a distribuição de idades de pensionistas de uma empresa de previdência. 
+Escreva um programa que leia as idades de uma quantidade não informada de clientes e mostre a distribuição em intervalos de [0-25], [26-50], [51-75] e [76-100]. 
+Encerre a entrada de dados com um número negativo.
+'''
+
+i = 0
+int0_25 = 0
+int26_50 = 0
+int51_75 = 0
+int76_100 = 0
+
+while i>=0 :
+    i = int(input('Insira a idade do cliente: '))
+
+    if i>=0 and i<=25:
+        int0_25 += 1
+    
+    elif i>=26 and i<=50:
+        int26_50 += 1
+    
+    elif i>=51 and i<=75:
+        int51_75 += 1
+    
+    elif i>=76 and i<=100:
+        int76_100 += 1
+    
+    else:
+        print('Insira uma idade válida.\n')
+    
+    print(f'Idade\tQuantidade\n0-25\t{int0_25}\n26-50\t{int26_50}\n51-75\t{int51_75}\n76-100\t{int76_100}\n===============')
+
+
